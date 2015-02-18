@@ -1,4 +1,4 @@
-# Java
+# Java Style Guide
 
 ##### Index
 0. [Clean Code](#clean-code)
@@ -17,7 +17,7 @@
 13. [Singletons](#singletons)
 14. [High Level Software Design Guidelines](#high-level-software-design-guidelines)
 
-# Clean Code
+#[Clean Code](#java-style-guide)
   - All names should properly convey usage.
   - Keep function size small. Aim for 4 lines.
   - Keep classes small. Aim for 50 lines.
