@@ -18,21 +18,18 @@
 # Variables
   - Camel case.  Can mash two words together if the English language treats it as one word.
   ```Java
-  // Examples
-  userName OR username
-  someValue
-  someLocalValue
+  userName (OR) username;
+  someValue;
+  someLocalValue;
   ```
   - Predicates should be named in the form of questions. 
   ```Java
-  // Examples
   plateStack.isEmpty()
   shouldQuitProgram()
   boolean hasCompletedTask;
   ```
   - Units are denoted with a postfix notation after two underscores.
   ```Java
-  // Examples
   elapsedTime__sec
   elapsedTime__ms
   displacement__cm
