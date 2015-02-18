@@ -1,6 +1,6 @@
 # Java
 
-#### Index
+##### Index
 0. [Clean Code](#clean-code)
 1. [General Formatting](#general-formatting)
 2. [Restricted Keyword Usage](#restricted-keyword-usage)
@@ -17,7 +17,7 @@
 13. [Singletons](#singletons)
 14. [High Level Software Design Guidelines](#high-level-software-design-guidelines)
 
-# Clean Code (#index)
+# Clean Code
   - All names should properly convey usage.
   - Keep function size small. Aim for 4 lines.
   - Keep classes small. Aim for 50 lines.
