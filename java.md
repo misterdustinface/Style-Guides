@@ -4,12 +4,13 @@
 1. [Variables](#variables)
 2. [Constant Variables](#constant variables)
 3. [Local Variables and Parameters](#local variables and parameters)
-4. [Conditional Statements](#conditional statements)
-5. [Functions](#functions)
-6. [Classes](#classes)
-7. [Interfaces](#interfaces)
-8. [Singletons](#singletons)
-9. [High Level Software Design Guidelines](#software design)
+4. [Enumerated Types](#enumerated types)
+5. [Conditional Statements](#conditional statements)
+6. [Functions](#functions)
+7. [Classes](#classes)
+8. [Interfaces](#interfaces)
+9. [Singletons](#singletons)
+10. [High Level Software Design Guidelines](#software design)
 
 # Clean Code
   - All names should properly convey usage.
@@ -55,6 +56,11 @@
   - Sometimes my parameters are named with all CAPS, because I typically treat them as constant variables, you should use the final keyword when doing so.
   - If the parameters are part of some type of math function, their names can be one letter in length.
   - Local variable names can be one letter in length if the datatype is specific; otherwise, the name must be more  descriptive -> following the Variables guidelines.
+
+# Enumerated Types
+  - Typename should be in all CAPS.
+  - Defined type values should be in all CAPS.
+  - Usage should be a private implementation detail.
 
 # Conditional Statements
 ```Java
