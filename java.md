@@ -170,9 +170,18 @@
     4. Only "predicate" functions can return a boolean value, but they must follow the predicate naming convention. 
 
 # Classes
+  - Initialize member variables within the constructor.
+  - Prefer composition over inheritance.
+  - Utilize encapsulation.
 
 # Interfaces
+  - Do not name with a prefix notation.
+  - An interface is an API, so keep the method names short and to-the-point.
 
 # Singletons
+  - Designed as a Java class.
+  - The "getter" function(s) must be declared static.
+  - The singleton object should be an instantiated private static data member of the class.
+  - All class constructors must be private.
 
 # High Level Software Design Guidelines
