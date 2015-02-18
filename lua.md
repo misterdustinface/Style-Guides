@@ -4,6 +4,8 @@
 0. [Clean Code](#clean-code)
 1. [General Formatting](#general-formatting)
 2. [Variable and Function Names](#variable-and-function-names)
+3. [Constant Variables](#constant-variables)
+4. [Local Variables and Parameters](#local-variables-and-parameters)
 
 #[Clean Code](#index)
   - All names should properly convey usage.
@@ -36,3 +38,17 @@
   elapsedTime__ms
   displacement__cm
 ```
+
+#[Constant Variables](#index)
+  - Should be in all CAPS, with logical separations delimited by one underscore character.
+```Lua
+  TABLE_DELIMITER
+  MAX_INPUT_SIZE
+  MAX_TRAVEL_DISTANCE__cm
+```
+
+#[Local Variables and Parameters](#index)
+  - Since your function size should be small, I think there should be some freedom allowed here.
+  - Sometimes my parameters are named with all CAPS, because I typically treat them as constant variables.
+  - If the parameters are part of some type of math function, their names can be one letter in length.
+  - Local variable names can be one letter in length if the datatype is specific; otherwise, the name must be more  descriptive -> following the Variables guidelines.
