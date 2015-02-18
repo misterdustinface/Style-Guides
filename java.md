@@ -159,12 +159,15 @@
   - Parameter restrictions
     1. NO BOOLEAN PARAMETERS
     2. Limit number of parameters to the range [0,2].  (Attempt to do so no matter the cost)
+  
   - Fuckery
     1. DO NOT CHECK FOR NULL
+  
   - Return restrictions
     1. ABSOLUTELY NO RETURN CODES.
     2. null is a synonym for "No Value"; therefore, you may only return null from a search function.
     3. Return at the end of the function, unless within a "simple loop".
+    4. Only "predicate" functions can return a boolean value, but they must follow the predicate naming convention. 
 
 # Classes
 
