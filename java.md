@@ -185,3 +185,7 @@
   - All class constructors must be private.
 
 # High Level Software Design Guidelines
+  - Dependencies should be representable by Directed Asynchronous Graphs; resolve all dependencies that do not conform to this standard.
+  - Decouple packages/projects from each other.
+  - Invert dependencies with interfaces.
+  - Utilize design patterns, but only when they improve readability.
