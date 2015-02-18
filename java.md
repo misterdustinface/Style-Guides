@@ -8,6 +8,7 @@
 6. [Singletons](#singletons)
 
 # Variables
+  - camel case
 
 # Constants
 
