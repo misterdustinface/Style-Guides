@@ -14,19 +14,20 @@
   - Keep function size small. Aim for 4 lines.
   - Keep classes small. Aim for 50 lines.
   - Comments should be a last resort.
+  - Reads like well written prose.
 
 # Variables
   - Camel case.  Can mash two words together if the English language treats it as one word.
 ```Java
-  userName (OR) username;
-  someValue;
-  someLocalValue;
+  userName (OR) username
+  someValue
+  someLocalValue
 ```
   - Predicates should be named in the form of questions. 
 ```Java
   plateStack.isEmpty()
   shouldQuitProgram()
-  boolean hasCompletedTask;
+  boolean hasCompletedTask
 ```
   - Units are denoted with a postfix notation after two underscores.
 ```Java
@@ -36,6 +37,8 @@
 ```
 
 # Constants
+```Java final ```
+- Definition: Java values that utilize the final keyword
 
 # Statements
 ```Java
