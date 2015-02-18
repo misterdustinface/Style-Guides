@@ -3,22 +3,24 @@
 0. [Clean Code](#cleancode)
 1. [General Formatting](#formatting)
 2. [Restricted Keyword Usage](#restricted keyword usage)
-3. [Variables](#variables)
+3. [Variable and Function Names](#variable and function names)
 4. [Constant Variables](#constant variables)
 5. [Local Variables and Parameters](#local variables and parameters)
 6. [Enumerated Types](#enumerated types)
 7. [Conditional Statements and Loops](#conditional statements and loops)
 8. [The Conditional Expression](#conditional expression)
-9. [Functions](#functions)
-10. [Classes](#classes)
-11. [Interfaces](#interfaces)
-12. [Singletons](#singletons)
-13. [High Level Software Design Guidelines](#software design)
+9. [Error Handling](#error handling)
+10. [Functions](#functions)
+11. [Classes](#classes)
+12. [Interfaces](#interfaces)
+13. [Singletons](#singletons)
+14. [High Level Software Design Guidelines](#software design)
 
 # Clean Code
   - All names should properly convey usage.
   - Keep function size small. Aim for 4 lines.
   - Keep classes small. Aim for 50 lines.
+  - Refactor often.
   - Comments should be a last resort.
   - Reads like well written prose.
 
@@ -28,12 +30,13 @@
   - DO NOT make banners or other "roadmap" indicators out of comments.
 
 # Restricted Keyword Usage
-  - continue: should not appear
-  - do: should refrain from using
-  - instanceof: should only use as a private implementation detail
-  - switch, case: should only use as a private implementation detail
+  - continue: Should NEVER appear.
+  - do: Should refrain from using.  A while loop can typically increase readability.
+  - instanceof: Should only use as a private implementation detail.  Can typically be replaced via polymorphism.
+  - switch, case: Should only use as a private implementation detail.  Can typically be replaced via polymorphism.
+  - null: It is not a keyword, but it is often treated as one.  It should be used as a synonym for "No Value".
 
-# Variables
+# Variable and Function Names
   - Camel case.  Can mash two words together if the English language treats it as one word.
 ```Java
   userName (OR) username
@@ -58,7 +61,7 @@
 ```Java 
   final 
 ```
-  - Should be in all CAPS, with logical separations delimited by the underscore (_).
+  - Should be in all CAPS, with logical separations delimited by one underscore character.
 ```Java
   TABLE_DELIMITER
   MAX_INPUT_SIZE
@@ -147,7 +150,21 @@
   result = condition ? trueResolution : falseResolution;
 ```
 
+# Error Handling
+  - ABSOLUTELY NO RETURN CODES.
+  - Create descriptive exceptions that extend runtime exception.
+  - Throw your custom, descriptive runtime exception.
+
 # Functions
+  - Parameter restrictions
+    1. NO BOOLEAN PARAMETERS
+    2. Limit number of parameters to the range [0,2].  (Attempt to do so no matter the cost)
+  - Fuckery
+    1. DO NOT CHECK FOR NULL
+  - Return restrictions
+    1. ABSOLUTELY NO RETURN CODES.
+    2. null is a synonym for "No Value"; therefore, you may only return null from a search function.
+    3. Return at the end of the function, unless within a "simple loop".
 
 # Classes
 
