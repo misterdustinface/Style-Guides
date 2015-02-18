@@ -15,8 +15,14 @@
   - Comments should be a last resort.
 
 # Variables
-  - camel case. EX: my
-  - units are denoted with a postfix notation after two underscores.
+  - camel case. 
+  ### EXAMPLES
+    - 
+  - predicates should be named in the form of questions. 
+  ### EXAMPLES
+    - plateStack.isEmpty()
+    - 
+  - units are denoted with a postfix notation after two underscores. EX: elapsedTime__sec
 
 # Constants
 
