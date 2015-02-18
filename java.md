@@ -8,3 +8,13 @@
 6. [Singletons](#singletons)
 
 # Variables
+
+# Constants
+
+# Functions
+
+# Classes
+
+# Interfaces
+
+# Singletons
