@@ -17,7 +17,7 @@
 13. [Singletons](#singletons)
 14. [High Level Software Design Guidelines](#high-level-software-design-guidelines)
 
-#[Clean Code](#java-style-guide)
+#[Clean Code](#index)
   - All names should properly convey usage.
   - Keep function size small. Aim for 4 lines.
   - Keep classes small. Aim for 50 lines.
