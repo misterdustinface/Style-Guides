@@ -1,16 +1,18 @@
 # Java
 
 0. [Clean Code](#cleancode)
-1. [Variables](#variables)
-2. [Constant Variables](#constant variables)
-3. [Local Variables and Parameters](#local variables and parameters)
-4. [Enumerated Types](#enumerated types)
-5. [Conditional Statements](#conditional statements)
-6. [Functions](#functions)
-7. [Classes](#classes)
-8. [Interfaces](#interfaces)
-9. [Singletons](#singletons)
-10. [High Level Software Design Guidelines](#software design)
+1. [General Formatting](#formatting)
+2. [Variables](#variables)
+3. [Constant Variables](#constant variables)
+4. [Local Variables and Parameters](#local variables and parameters)
+5. [Enumerated Types](#enumerated types)
+6. [Conditional Statements](#conditional statements)
+7. [The Conditional Expression](#conditional expression)
+8. [Functions](#functions)
+9. [Classes](#classes)
+10. [Interfaces](#interfaces)
+11. [Singletons](#singletons)
+12. [High Level Software Design Guidelines](#software design)
 
 # Clean Code
   - All names should properly convey usage.
@@ -18,6 +20,11 @@
   - Keep classes small. Aim for 50 lines.
   - Comments should be a last resort.
   - Reads like well written prose.
+
+# General Formatting
+  - Use 4-space indents when programming in Java.
+  - Conditional Statements and Loops should have a space between keywords, parenthesis, and curly braces.
+  - DO NOT make banners or other "roadmap" indicators out of comments.
 
 # Variables
   - Camel case.  Can mash two words together if the English language treats it as one word.
@@ -63,24 +70,33 @@
   - Usage should be a private implementation detail.
 
 # Conditional Statements
+  - Many accepted formats. Use "Clean Code" judgement. When in doubt use { braces }.
 ```Java
-  if (isEmpty()) {
-    // perform action or actions;
+  if (shouldAcceptRequest()) {
+    performAction();
   }
 ```
 ```Java
-  if (isEmpty()) 
-    // perform simple action;
+  if (shouldAcceptRequest()) 
+    performAction();
 ```
 ```Java
-  if (isEmpty()) // perform simple action;
+  if (shouldAcceptRequest()) performAction();
 ```
 ```Java
-  if (isEmpty()) {
-    // perform action or actions;
+  if (shouldAcceptRequest()) {
+    performAction();
   } else {
-    // perform action or actions;
+    logUnacceptedRequest();
   }
+```
+
+# The Conditional Expression
+  - MUST NOT be nested.
+  - MUST ONLY occupy one line.
+  - MUST have the following format (the "resolutions" can be function calls).
+```Java
+  result = condition ? trueResolution : falseResolution;
 ```
 
 # Functions
