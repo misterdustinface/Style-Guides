@@ -17,32 +17,32 @@
 
 # Variables
   - Camel case.  Can mash two words together if the English language treats it as one word.
-  ```Java
+```Java
   userName (OR) username;
   someValue;
   someLocalValue;
-  ```
+```
   - Predicates should be named in the form of questions. 
-  ```Java
+```Java
   plateStack.isEmpty()
   shouldQuitProgram()
   boolean hasCompletedTask;
-  ```
+```
   - Units are denoted with a postfix notation after two underscores.
-  ```Java
+```Java
   elapsedTime__sec
   elapsedTime__ms
   displacement__cm
-  ```
+```
 
 # Constants
 
 # Statements
- ```Java
+```Java
   if (isEmpty()) {
     //
   }
-  ```
+```
 
 # Functions
 
