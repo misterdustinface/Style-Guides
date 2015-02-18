@@ -2,17 +2,18 @@
 
 0. [Clean Code](#cleancode)
 1. [General Formatting](#formatting)
-2. [Variables](#variables)
-3. [Constant Variables](#constant variables)
-4. [Local Variables and Parameters](#local variables and parameters)
-5. [Enumerated Types](#enumerated types)
-6. [Conditional Statements](#conditional statements)
-7. [The Conditional Expression](#conditional expression)
-8. [Functions](#functions)
-9. [Classes](#classes)
-10. [Interfaces](#interfaces)
-11. [Singletons](#singletons)
-12. [High Level Software Design Guidelines](#software design)
+2. [Restricted Keyword Usage](#restricted keyword usage)
+3. [Variables](#variables)
+4. [Constant Variables](#constant variables)
+5. [Local Variables and Parameters](#local variables and parameters)
+6. [Enumerated Types](#enumerated types)
+7. [Conditional Statements and Loops](#conditional statements and loops)
+8. [The Conditional Expression](#conditional expression)
+9. [Functions](#functions)
+10. [Classes](#classes)
+11. [Interfaces](#interfaces)
+12. [Singletons](#singletons)
+13. [High Level Software Design Guidelines](#software design)
 
 # Clean Code
   - All names should properly convey usage.
@@ -25,6 +26,12 @@
   - Use 4-space indents when programming in Java.
   - Conditional Statements and Loops should have a space between keywords, parenthesis, and curly braces.
   - DO NOT make banners or other "roadmap" indicators out of comments.
+
+# Restricted Keyword Usage
+  - continue: should not appear
+  - do: should refrain from using
+  - instanceof: should only use as a private implementation detail
+  - switch, case: should only use as a private implementation detail
 
 # Variables
   - Camel case.  Can mash two words together if the English language treats it as one word.
@@ -69,26 +76,67 @@
   - Defined type values should be in all CAPS.
   - Usage should be a private implementation detail.
 
-# Conditional Statements
+# Conditional Statements and Loops
   - Many accepted formats. Use "Clean Code" judgement. When in doubt use { braces }.
+  - Avoid do-while loops.
+  - Loops should follow the Initialize - Check - Change pattern.
 ```Java
   if (shouldAcceptRequest()) {
-    performAction();
+      performAction();
   }
 ```
 ```Java
   if (shouldAcceptRequest()) 
-    performAction();
+      performAction();
 ```
 ```Java
   if (shouldAcceptRequest()) performAction();
 ```
 ```Java
   if (shouldAcceptRequest()) {
-    performAction();
+      performAction();
   } else {
-    logUnacceptedRequest();
+      logUnacceptedRequest();
   }
+```
+```Java
+  for (int i = 0; i < 10; i++) {
+      output(i);
+  }
+```
+```Java
+  for (int i = 0; i < 10; i++)
+      output(i);
+```
+```Java
+  for (Shape s : shapes) {
+      draw(s);
+  }
+```
+```Java
+  for (Shape s : shapes) 
+      draw(s);
+```
+```Java
+  for (Shape s : shapes) {
+      if (s.contains(x,y)) {
+          recordCollision(x,y);
+      }
+  }
+```
+```Java
+  for (Shape s : shapes)
+      if (s.contains(x,y))
+          recordCollision(x,y);
+```
+```Java
+  while (shouldHurtFeels()) {
+      hurtFeels();
+  }
+```
+```Java
+  while (shouldHurtFeels())
+      hurtFeels();
 ```
 
 # The Conditional Expression
