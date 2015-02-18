@@ -16,18 +16,25 @@
   - Comments should be a last resort.
 
 # Variables
-  - camel case. 
-    - 
-    - 
-  - predicates should be named in the form of questions. 
+  - Camel case.  Can mash two words together if the English language treats it as one word.
+    - userName OR username
+    - someValue
+    - someLocalValue
+  - Predicates should be named in the form of questions. 
     - plateStack.isEmpty()
     - shouldQuitProgram()
     - boolean hasCompletedTask;
-  - units are denoted with a postfix notation after two underscores. EX: elapsedTime__sec
+  - Units are denoted with a postfix notation after two underscores.
+    - elapsedTime__sec
+    - elapsedTime__ms
+    - displacement__cm
 
 # Constants
 
 # Statements
+  if (isEmpty()) {
+    //
+  }
 
 # Functions
 
