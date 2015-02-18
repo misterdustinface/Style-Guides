@@ -1,5 +1,6 @@
 # Java
 
+## Index
 0. [Clean Code](#clean-code)
 1. [General Formatting](#general-formatting)
 2. [Restricted Keyword Usage](#restricted-keyword-usage)
