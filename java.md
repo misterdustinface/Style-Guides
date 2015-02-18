@@ -163,6 +163,7 @@
   
   - Fuckery
     1. DO NOT CHECK FOR NULL
+    2. NO DEFAULT ARGUMENTS
   
   - Return restrictions
     1. ABSOLUTELY NO RETURN CODES.
