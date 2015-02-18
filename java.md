@@ -17,24 +17,35 @@
 
 # Variables
   - Camel case.  Can mash two words together if the English language treats it as one word.
-    - userName OR username
-    - someValue
-    - someLocalValue
+    ```Java
+    // Examples
+    userName OR username
+    someValue
+    someLocalValue
+    ```
   - Predicates should be named in the form of questions. 
-    - plateStack.isEmpty()
-    - shouldQuitProgram()
-    - boolean hasCompletedTask;
+    ```Java
+    // Examples
+    plateStack.isEmpty()
+    shouldQuitProgram()
+    boolean hasCompletedTask;
+    ```
   - Units are denoted with a postfix notation after two underscores.
-    - elapsedTime__sec
-    - elapsedTime__ms
-    - displacement__cm
+    ```Java
+    // Examples
+    elapsedTime__sec
+    elapsedTime__ms
+    displacement__cm
+    ```
 
 # Constants
 
 # Statements
+ ```Java
   if (isEmpty()) {
     //
   }
+  ```
 
 # Functions
 
