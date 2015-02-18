@@ -1,10 +1,10 @@
 # Java
 
-[Variables](#variables)
-[Constants](#constants)
-[Functions](#functions)
-[Classes](#classes)
-[Interfaces](#interfaces)
-[Singletons](#singletons)
+1. [Variables](#variables)
+2. [Constants](#constants)
+3. [Functions](#functions)
+4. [Classes](#classes)
+5. [Interfaces](#interfaces)
+6. [Singletons](#singletons)
 
 # Variables
