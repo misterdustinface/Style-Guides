@@ -6,6 +6,7 @@
 2. [Variable and Function Names](#variable-and-function-names)
 3. [Constant Variables](#constant-variables)
 4. [Local Variables and Parameters](#local-variables-and-parameters)
+5. [The Conditional Expression](#the-conditional-expression)
 
 #[Clean Code](#index)
   - All names should properly convey usage.
@@ -52,3 +53,14 @@
   - Sometimes my parameters are named with all CAPS, because I typically treat them as constant variables.
   - If the parameters are part of some type of math function, their names can be one letter in length.
   - Local variable names can be one letter in length if the datatype is specific; otherwise, the name must be more  descriptive -> following the Variables guidelines.
+
+#[The Conditional Expression](#index)
+  - MUST NOT be nested.
+  - MUST ONLY occupy one line.
+```Lua
+  -- BAD
+  result = condition and trueResolution or falseResolution
+  
+  -- GOOD
+  result = tif(condition, trueResolution, falseResolution)
+```
