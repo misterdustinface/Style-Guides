@@ -16,10 +16,10 @@
 
 # Variables
   - camel case. 
-  ### EXAMPLES
+### EXAMPLES
     - 
   - predicates should be named in the form of questions. 
-  ### EXAMPLES
+### EXAMPLES
     - plateStack.isEmpty()
     - 
   - units are denoted with a postfix notation after two underscores. EX: elapsedTime__sec
