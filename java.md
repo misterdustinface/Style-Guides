@@ -30,7 +30,7 @@
   - Conditional Statements and Loops should have a space between keywords, parenthesis, and curly braces.
   - DO NOT make banners or other "roadmap" indicators out of comments.
   - Only one expression per line ( Only one semicolon per line ";" )
-  - Method definitions MUST have a newline after the opening curly brace. Sometimes one-line definitions form, and such definitions take the appearance of abstract method declarations.
+  - Method definitions MUST have a newline after the opening curly brace. Sometimes one-line definitions form, and (at a glance) such definitions are easily mistaken for abstract method declarations.
 
 #[Restricted Keyword Usage](#index)
   - continue: Should NEVER appear.
