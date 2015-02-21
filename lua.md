@@ -1,4 +1,4 @@
-# Lua Style Guide
+## Lua Style Guide
 
 ##### Index
 0. [Clean Code](#clean-code)
