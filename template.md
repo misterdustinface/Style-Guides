@@ -6,10 +6,10 @@
 2. [Entry C](#entry-c)
 3. [Entry D](#entry-d)
 
-#[Entry A](#index)
+##[Entry A](#index)
 
-#[Entry B](#index)
+##[Entry B](#index)
 
-#[Entry C](#index)
+##[Entry C](#index)
 
-#[Entry D](#index)
+##[Entry D](#index)
