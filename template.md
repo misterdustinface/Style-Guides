@@ -1,4 +1,4 @@
-# Style Guide
+## Style Guide
 
 ##### Index
 0. [Entry A](#entry-a)
