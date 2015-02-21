@@ -1,6 +1,6 @@
 
-[Java](java#java-style-guide)
+[Java](java.md)
 
-[Lua](lua#lua-style-guide)
+[Lua](lua.md)
 
 [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
