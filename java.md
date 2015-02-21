@@ -85,7 +85,7 @@
 ##[Conditional Statements and Loops](#index)
   - Many accepted formats. Use "Clean Code" judgement. When in doubt use { braces }.
   - Avoid do-while loops.
-  - Loops should follow the Initialize - Check - Change pattern.
+  - Loops should follow the Initialize - Check - Change paradigm.
 ```Java
   if (shouldAcceptRequest()) {
       performAction();
