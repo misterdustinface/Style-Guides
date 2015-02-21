@@ -10,7 +10,7 @@
 6. [Error Handling](#error-handling)
 7. [Functions](#functions)
 
-#[Clean Code](#index)
+##[Clean Code](#index)
   - All names should properly convey usage.
   - Keep function size small. Aim for 4 lines.
   - Keep files small. Aim for 50 lines.
@@ -18,11 +18,11 @@
   - Comments should be a last resort.
   - Reads like well written prose.
 
-#[General Formatting](#index)
+##[General Formatting](#index)
   - Use 2 OR 4 space indents when programming in Lua.
   - DO NOT make banners or other "roadmap" indicators out of comments.
 
-#[Variable and Function Names](#index)
+##[Variable and Function Names](#index)
   - Camel case.  Can mash two words together if the English language treats it as one word.
 ```Lua
   userName (OR) username
@@ -42,7 +42,7 @@
   displacement__cm
 ```
 
-#[Constant Variables](#index)
+##[Constant Variables](#index)
   - Should be in all CAPS, with logical separations delimited by one underscore character.
 ```Lua
   TABLE_DELIMITER
@@ -50,13 +50,13 @@
   MAX_TRAVEL_DISTANCE__cm
 ```
 
-#[Local Variables and Parameters](#index)
+##[Local Variables and Parameters](#index)
   - Since your function size should be small, I think there should be some freedom allowed here.
   - Sometimes my parameters are named with all CAPS, because I typically treat them as constant variables.
   - If the parameters are part of some type of math function, their names can be one letter in length.
   - Local variable names can be one letter in length if the datatype is specific; otherwise, the name must be more  descriptive -> following the Variables guidelines.
 
-#[The Conditional Expression](#index)
+##[The Conditional Expression](#index)
   - MUST NOT be nested.
   - MUST ONLY occupy one line.
 ```Lua
@@ -67,10 +67,10 @@
   result = tif(condition, trueResolution, falseResolution)
 ```
 
-#[Error Handling](#index)
+##[Error Handling](#index)
   - ABSOLUTELY NO RETURN CODES.
 
-#[Functions](#index)
+##[Functions](#index)
   - Parameter restrictions
     1. NO BOOLEAN PARAMETERS
     2. Limit number of parameters to the range [0,2].  (Attempt to do so no matter the cost)
