@@ -184,6 +184,7 @@
 
 ##[Singletons](#index)
   - Designed as a Java class.
+  - Must be tagged with the "Singleton" interface.
   - The "getter" function(s) must be declared static.
   - The singleton object should be an instantiated private static data member of the class.
   - All class constructors must be private.
@@ -193,3 +194,4 @@
   - Decouple packages/projects from each other.
   - Invert dependencies with interfaces.
   - Utilize design patterns, but only when they improve readability.
+  - Tagging interfaces must be used to better describe design patterns.
